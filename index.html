@@ -3,32 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sana Khan · AI Product Manager</title>
+<title>Sana Khan</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 /* ═══════════════════════════════════════════
-   CSS VARIABLES & RESET — Professional / soothing palette for AI product leader
+   CSS VARIABLES & RESET - McKesson Palette
    ═══════════════════════════════════════════ */
 :root {
-  --bg-primary: #0C1A2B;        /* deep navy – calm base */
-  --bg-secondary: #142433;       /* slightly lighter navy */
-  --bg-card: #1D2D3F;            /* card background */
-  --bg-card-hover: #263A4F;      /* hover state */
-  --border: #314A60;             /* subtle border */
-  --border-accent: #3F5A73;      /* accent border */
-  --text-primary: #F0F6FC;       /* crisp off‑white */
-  --text-secondary: #C0D0E0;     /* soft steel blue */
-  --text-muted: #8FA0B5;         /* muted slate */
-  --accent: #4799A7;             /* muted teal – primary accent */
-  --accent-bright: #5AADBB;      /* brighter teal for hover */
-  --accent-glow: rgba(71, 153, 167, 0.15);
-  --cyan: #3A7CA5;               /* deeper blue‑teal */
-  --cyan-glow: rgba(58, 124, 165, 0.1);
-  --green: #5FA5A5;              /* soft teal‑green (replaces original green) */
-  --orange: #E0B05E;             /* warm amber for contrast */
-  --pink: #7DB37A;               /* kept but unused */
+  --bg-primary: #0B1F3A;
+  --bg-secondary: #102A44;
+  --bg-card: #1E2E4A;
+  --bg-card-hover: #25355A;
+  --border: #2F5F8F;
+  --border-accent: #3B6FA5;
+  --text-primary: #F2F5F7;
+  --text-secondary: #C8D46A;
+  --text-muted: #7DB37A;
+  --accent: #4F8F8B;
+  --accent-bright: #5FA3A0;
+  --accent-glow: rgba(79, 143, 139, 0.15);
+  --cyan: #3B6FA5;
+  --cyan-glow: rgba(59, 111, 165, 0.1);
+  --green: #8FCF8A;
+  --orange: #D6E06F;
+  --pink: #7DB37A;
   --font-display: 'Syne', sans-serif;
   --font-body: 'DM Sans', sans-serif;
   --font-mono: 'JetBrains Mono', monospace;
@@ -73,7 +73,7 @@ body::before {
 }
 
 /* ═══════════════════════════════════════════
-   AMBIENT BACKGROUND GLOW — soothing orbs
+   AMBIENT BACKGROUND GLOW - Healthcare Theme
    ═══════════════════════════════════════════ */
 .ambient-glow {
   position: fixed;
@@ -123,7 +123,7 @@ body::before {
 }
 
 /* ═══════════════════════════════════════════
-   NAVIGATION
+   NAVIGATION - Healthcare Professional
    ═══════════════════════════════════════════ */
 nav {
   position: fixed;
@@ -135,14 +135,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background: rgba(12, 26, 43, 0.85);
+  background: rgba(11, 31, 58, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   transition: all 0.4s var(--ease-out-expo);
 }
 nav.scrolled {
   padding: 0.7rem 2rem;
-  background: rgba(12, 26, 43, 0.95);
+  background: rgba(11, 31, 58, 0.95);
 }
 .nav-logo {
   font-family: var(--font-display);
@@ -221,7 +221,7 @@ nav.scrolled {
 }
 
 /* ═══════════════════════════════════════════
-   HERO
+   HERO - Healthcare Product Leader
    ═══════════════════════════════════════════ */
 .hero {
   position: relative;
@@ -255,8 +255,8 @@ nav.scrolled {
   vertical-align: middle;
 }
 @keyframes pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(95, 165, 165, 0.4); }
-  50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(95, 165, 165, 0); }
+  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(143, 207, 138, 0.4); }
+  50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(143, 207, 138, 0); }
 }
 
 .hero h1 {
@@ -341,7 +341,7 @@ nav.scrolled {
 }
 .btn-outline:hover {
   border-color: var(--green);
-  background: rgba(95, 165, 165, 0.1);
+  background: rgba(143, 207, 138, 0.1);
   transform: translateY(-2px);
 }
 
@@ -446,7 +446,7 @@ section {
   transition: all 0.3s;
   white-space: nowrap;
 }
-.tag:hover { border-color: var(--green); color: var(--green); background: rgba(95, 165, 165, 0.1); }
+.tag:hover { border-color: var(--green); color: var(--green); background: rgba(143, 207, 138, 0.1); }
 .tag.highlight { border-color: var(--accent); color: var(--green); background: var(--accent-glow); }
 
 .terminal {
@@ -517,7 +517,6 @@ section {
   transition: all 0.4s var(--ease-out-expo);
   position: relative;
   overflow: hidden;
-  text-decoration: none;
 }
 .tool-card::before {
   content: '';
@@ -545,7 +544,6 @@ section {
   font-weight: 600;
   font-size: 1.05rem;
   margin-bottom: 0.5rem;
-  color: var(--text-primary);
 }
 .tool-card p {
   font-size: 0.85rem;
@@ -562,9 +560,9 @@ section {
   border-radius: 4px;
   margin-top: 0.8rem;
 }
-.tool-badge.llm { background: rgba(90, 173, 187, 0.15); color: var(--accent-bright); }
-.tool-badge.auto { background: rgba(58, 124, 165, 0.1); color: var(--cyan); }
-.tool-badge.dev { background: rgba(95, 165, 165, 0.1); color: var(--green); }
+.tool-badge.llm { background: rgba(95, 163, 160, 0.15); color: var(--accent-bright); }
+.tool-badge.auto { background: rgba(59, 111, 165, 0.1); color: var(--cyan); }
+.tool-badge.dev { background: rgba(143, 207, 138, 0.1); color: var(--green); }
 
 /* ═══════════════════════════════════════════
    PROJECTS — FEATURED CARDS
@@ -586,7 +584,6 @@ section {
   transition: all 0.4s var(--ease-out-expo);
   position: relative;
   overflow: hidden;
-  text-decoration: none;
 }
 .project-card::after {
   content: '';
@@ -626,7 +623,6 @@ section {
   font-weight: 700;
   letter-spacing: -0.02em;
   margin-bottom: 0.8rem;
-  color: var(--text-primary);
 }
 .project-info p {
   color: var(--text-secondary);
@@ -674,7 +670,7 @@ section {
 .project-github:hover {
   color: var(--text-primary);
   border-color: var(--green);
-  background: rgba(95, 165, 165, 0.1);
+  background: rgba(143, 207, 138, 0.1);
   transform: translateX(4px);
 }
 .project-github .arrow {
@@ -733,7 +729,7 @@ section {
 }
 .timeline-item:first-child::before {
   border-color: var(--green);
-  box-shadow: 0 0 0 4px rgba(95, 165, 165, 0.3);
+  box-shadow: 0 0 0 4px rgba(143, 207, 138, 0.3);
 }
 .timeline-item:hover::before {
   border-color: var(--green);
@@ -788,9 +784,64 @@ section {
 .tl-highlight strong { color: var(--accent-bright); }
 
 /* ═══════════════════════════════════════════
-   GITHUB SECTION (if used later, but currently not present)
+   GITHUB SECTION
    ═══════════════════════════════════════════ */
-/* omitted because not in HTML */
+.github-section {
+  text-align: center;
+}
+.github-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.github-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 2rem;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: all 0.3s var(--ease-out-expo);
+  text-align: left;
+}
+.github-card:hover {
+  border-color: var(--green);
+  background: var(--bg-card-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+.github-card h4 {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.github-card h4 svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+.github-card p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.github-stats {
+  display: flex;
+  gap: 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+.github-stats span {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
 
 /* ═══════════════════════════════════════════
    CONTACT
@@ -1031,18 +1082,18 @@ footer {
     <div class="toolkit-row">
       <a href="https://github.com/sankshine/Cloud-cost-optimization" target="_blank" class="tool-card">
         <span class="tool-icon">🔐</span>
-        <h4>Cloud Cost Optimization</h4>
+        <h4 style="color: white;">Cloud Cost Optimization</h4>
         <p>Defined GTM strategy across 5 enterprise Data Products serving 1200+ users. Implemented resource allocation framework and cloud optimization, delivering $2M in annual compute cost savings for FinOps team.</p>
         <span class="tool-badge dev">GTM</span>
       </a>
       <a href="https://github.com/sankshine/On-prem_to_GCP_migration" target="_blank" class="tool-card">
         <span class="tool-icon">☁️</span>
-        <h4>On-prem to GCP Migration</h4>
+        <h4 style="color: white;">On-prem to GCP Migration</h4>
         <p>Migrated from on-prem Hadoop to GCP BigQuery with IAM security, HIPAA compliance, and metadata cataloging in Colibra.</p>
         <span class="tool-badge dev">Cloud</span>
       <a href="https://github.com/sankshine/Real-time-Kafka-Streaming" target="_blank" class="tool-card">
         <span class="tool-icon">🏥</span>
-        <h4>Real-Time Kafka Streaming Data Platform</h4>
+        <h4 style="color: white;">Real-Time Kafka Streaming Data Platform</h4>
         <p>Enterprise real-time data platform processing 15TB/day through Apache Kafka streaming pipelines integrated with ELK stack observability, with query optimization across Oracle, Hive, Trino, and Impala achieving 70% performance improvement.</p>
         <span class="tool-badge llm">Kafka</span>
       </a>
@@ -1067,7 +1118,7 @@ footer {
     <a href="https://github.com/sankshine/Agentic-AI-doc-processor" target="_blank" class="project-card reveal">
       <div class="project-info">
         <div class="project-tag">Generative AI</div>
-        <h3>Agentic AI Document Processor</h3>
+        <h3 style="color: white;">Agentic AI Document Processor</h3>
         <p>
           Automated 70% of real-estate document processing using Agentic AI with Milvus for vector-based retrieval and LangGraph for orchestrating multi-agent workflows across financial, legal, and real estate teams. 150+ user stories backlog automated.
 	    </p>
@@ -1095,7 +1146,7 @@ footer {
 	<a href="https://github.com/sankshine/500_alert_automation_with_n8n" target="_blank" class="project-card reveal">
 	  <div class="project-info">
 		<div class="project-tag">AI/ML Infrastructure</div>
-		<h3>$500 data usage alert automation with n8n</h3>
+		<h3 style="color: white;">$500 data usage alert automation with n8n</h3>
 		<p>
 		  Intelligent telecom usage monitoring system using LLaMA 3.1 70B to make context-aware blocking decisions for $500+ data overages. The AI agent analyzes customer tier, payment history, and usage patterns to handle VIP exceptions and edge cases, achieving 94% accuracy while maintaining data sovereignty through on-premise deployment. Reduced manual review by 75% with sub-30 second decision latency.
 		</p>
@@ -1126,7 +1177,7 @@ footer {
 	<a href="https://github.com/sankshine/PaLM2-based-data-classifier" target="_blank" class="project-card reveal">
 	  <div class="project-info">
 		<div class="project-tag">Generative AI • Data Governance</div>
-		<h3>PaLM2 based Data Classifier</h3>
+		<h3 style="color: white;">PaLM2 based Data Classifier</h3>
 		<p>
 		  Architected and deployed Vertex AI-based data quality pipeline using fine-tuned PaLM 2 to automatically profile, classify, and tag sensitive fields (PII/HSPII) across streaming and batch datasets. Reduced manual data governance effort by 80% while achieving 95%+ classification accuracy with automated DLP masking policies.
 		</p>
